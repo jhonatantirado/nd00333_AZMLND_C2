@@ -1,16 +1,39 @@
-http://aeb99d21-f13e-405a-b3c5-6dc0c0a07639.southcentralus.azurecontainer.io/swagger.json
-
 # Project: Operationalizing Machine Learning
 
 In this project, you will continue to work with the Bank Marketing dataset. You will use Azure to configure a cloud-based machine learning production model, deploy it, and consume it. You will also create, publish, and consume a pipeline. In the end, you will demonstrate all of your work by creating a README file and a screencast video.
 
 ## Overview
+The project is split in two parts.
+
+### Train and deploy an AutoML model using Azure ML Studio
+
+1. An AutoML model is trained using the Bank Marketing dataset we used for project 1. 
+2. Then, we deploy the best model to an ACI (Azure Container Instance) using Azure ML Studio . 
+3. Also, we enable the Application Insights feature and review the generated logs using the logs.py script.
+4. Next, we publish the deployed model API swagger documentation by running a docker container in our localhost. We must download the endpoint swagger.json file from Azure ML for this.
+5. After that, we consume the scoring API to clasify new instances by running the endpoint.py script in our localhost. We must get the scoring_uri and key for the deployed model endpoint and update the script.
+6. Finally, we use Apache Benchmark to load-test the deployed model.
+
+### Create, publish and consume a Pipeline for training an AutoML model, using a Jupyter Notebook and Azure ML SDK
+1. An AutoML model is trained using the Bank Marketing dataset we used for project 1. 
+2. In this case, however, we create a Pipeline, to automate the process and be able to repeat the process at any time.
+3. Next, we examine the metrics and the best model, which used the Voting Ensemble algorithm.
+4. Then, we test the model and examine the confusion metrics.
+5. After that, we publish the pipeline to generate a REST endpoint that allows us to rerun the pipeline at any time using any tool that can submit HTTP requests like POSTMAN.
+6. Finally, we send a request to the REST endpoint to rerun the pipeline.
+
 
 
 ## Architectural diagram
 
 
 ## Future improvements
+
+1. If the model is to be used by thousands of users, we can deploy the model to an Azure Kubernetes Cluster instead of an Azure Container Instance.
+2. We can publish the API swagger documentation to Azure also, so it is available for any user.
+3. We can automatically schedule the pipeline to retrain the AutoML model on a monthly basis. 
+4. The pipeline can also be triggered when the bank marketing dataset is updated.
+5. The pipeline can be extended to include a step to deploy the best model to AKS.
 
 
 ## Screenshots
