@@ -63,4 +63,4 @@ In this project, you will continue to work with the Bank Marketing dataset. You 
 
 ## Screencast video on Youtube
 
-https://www.youtube.com/watch?v=oNfYUSpA1-A
+[Screencast](https://www.youtube.com/watch?v=oNfYUSpA1-A)
