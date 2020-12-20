@@ -26,6 +26,10 @@ The project is split in two parts.
 
 ## Architectural diagram
 
+![AutoML model deployed to ACI](https://github.com/jhonatantirado/nd00333_AZMLND_C2/blob/master/images/Part1-AutoMLmodel-deployedACI.png)
+
+![Pipeline for training AutoML model](https://github.com/jhonatantirado/nd00333_AZMLND_C2/blob/master/images/Part2-Pipeline.png)
+
 
 ## Future improvements
 
