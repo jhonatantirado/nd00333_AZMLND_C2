@@ -82,8 +82,8 @@ Apache Benchmark runs against the HTTP API using authentication keys to retrieve
 
 5. Step 7
 
-![Pipeline section of Azure ML Studio, showing that the pipeline has been created]
-()
+Pipeline section of Azure ML Studio, showing that the pipeline has been created
+![Pipeline section of Azure ML Studio, showing that the pipeline has been created](https://github.com/jhonatantirado/nd00333_AZMLND_C2/blob/master/images/Step7-PipelineCreated.png)
 
 Pipelines section in Azure ML Studio, showing the Pipeline Endpoint
 ![Pipelines section in Azure ML Studio, showing the Pipeline Endpoint](https://github.com/jhonatantirado/nd00333_AZMLND_C2/blob/master/images/Step7-PipelineEndpoint.png)
