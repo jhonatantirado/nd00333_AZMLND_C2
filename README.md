@@ -25,9 +25,10 @@ The project is split in two parts.
 
 
 ## Architectural diagram
-
+1. Train and deploy an AutoML model using Azure ML Studio
 ![AutoML model deployed to ACI](https://github.com/jhonatantirado/nd00333_AZMLND_C2/blob/master/images/Part1-AutoMLmodel-deployedACI.png)
 
+2. Create, publish and consume a Pipeline for training an AutoML model, using a Jupyter Notebook and Azure ML SDK
 ![Pipeline for training AutoML model](https://github.com/jhonatantirado/nd00333_AZMLND_C2/blob/master/images/Part2-Pipeline.png)
 
 
